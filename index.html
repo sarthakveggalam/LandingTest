@@ -10,6 +10,7 @@
     <title>Creative - Start Bootstrap Theme</title>
 
     <!-- Bootstrap Core CSS -->
+    
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
 
     <!-- Custom Fonts -->
@@ -19,6 +20,9 @@
 
     <!-- Plugin CSS -->
     <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+    
+    
+    
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/creative.css" type="text/css">
@@ -29,12 +33,12 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+    <script src="js/modernizr.js"></script>
 </head>
 
-<body id="page-top">
+<body data-hijacking="off" data-animation="scaleDown" id="page-top">
 
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top affix-top">
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top affix-top ">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -54,9 +58,7 @@
                         <a class="page-scroll" href="#about">About</a>
                     </li>
                     
-                    <li class="">
-                        <a class="page-scroll" href="#portfolio">Subscribe</a>
-                    </li>
+                    
                     <li class="">
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
@@ -67,18 +69,26 @@
         <!-- /.container-fluid -->
     </nav>
 
-    <header>
-        <div class="header-content">
-            <div class="header-content-inner">
+    <header >
+        <div class="header-content ">
+            <div class="header-content-inner ">
                 <h1 style="font-size: 65px;">Maidaid</h1>
                 <hr>
                 <p>Helping you find the right maid for your household.</p>
-                <a href="#about" class="btn btn-primary btn-xl page-scroll">Tell me more</a>
+
+                <form class="form-inline" role="form">
+                    <div class="form-group">
+                       <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email address">
+                    </div>
+                    <button type="submit" class="btn btn-success btn-lg">Invite Me!</button>
+                </form>
+                <br><br><br><br><br>
+                <a href="#about" class="page-scroll"><i class="fa fa-4x fa-arrow-circle-o-down page"></i>&nbsp</a>
             </div>
         </div>
     </header>
-
-    <section class="bg-primary" id="about">
+<!-- About section start -->
+    <section class="bg-primary " id="about">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
@@ -86,42 +96,44 @@
                     <hr class="light">
                     <p class="text-faded">Maidaid is an upcoming startup to look after your domestic needs. We aim to provide hassle free service at an affordable price.</p>
                     <!-- <a href="#" class="btn btn-default btn-xl">Get Started!</a> -->
+
+            <!-- Three step process -->
+            
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 text-center">
+                        <div class="service-box">
+                            <i class="fa fa-4x fa-newspaper-o wow bounceIn icon-primary" style="visibility: visible; animation-name: bounceIn;"></i>
+                            <h3>Requirements</h3>
+                            <p class="">Tell us what you want in no time at all</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 text-center">
+                        <div class="service-box">
+                            <i class="fa fa-4x fa-tablet wow bounceIn icon-primary" style="visibility: visible; animation-name: bounceIn;"></i>
+                            <h3>View</h3>
+                            <p class="">Utilise the unique features we offer. Searching for a help has never been so easy.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 text-center">
+                        <div class="service-box">
+                            <i class="fa fa-4x fa-user wow bounceIn icon-primary" style="visibility: visible; animation-name: bounceIn;"></i>
+                            <h3>Hire</h3>
+                            <p class="">Take your pick. It's that simple</p>
+                        </div>
+                    </div>
+                </div>    
+                    <!-- Three step process end -->
                 </div>
             </div>
         </div>
     </section>
-
-    
-
-    <section class="no-padding" id="portfolio">
-        <div class="container-fluid">
-            <div class="row no-gutter">
+    <!-- About section over -->
 
 
-            </div>
-        </div>
-    </section>
-
-    <aside class="bg-dark">
-        <div class="container text-center">
-            <h2>Subscribe</h2>
-            <hr>
-            <p>Like us? Please subscribe to get regular updates from us</p>
-            
-                <form class="col-lg-12">
-                    <div class="input-group" style="width:440px;text-align:center;margin:0 auto;">
-
-                    <input class="form-control input-lg" title="Don't worry. We hate spam, and will not share your email with anyone." placeholder="Enter your email address" type="text">
-                      <span class="input-group-btn"><button class="btn btn-lg btn-primary" type="button">Get Help</button></span>
-                    </div>
-                </form>
-                <!-- <h2>Free Download at Start Bootstrap!</h2>
-                <a href="#" class="btn btn-default btn-xl wow tada" style="visibility: visible; animation-name: tada;">Download Now!</a> -->
-            
-        </div>
-    </aside>
-
-    <section id="contact">
+    <!-- Subscription over -->
+    <aside id="contact" >
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
@@ -131,11 +143,12 @@
                 </div>
                 <div class="col-lg-12 text-center">
                     <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s" style="visibility: visible; animation-delay: 0.1s;"></i>
-                    <p><a href="mailto:your-email@your-domain.com">feedback@maidaid.in</a></p>
+                    <p><a href="mailto:your-email@your-domain.com">info@maidaid.in</a></p>
                 </div>
             </div>
         </div>
-    </section>
+    </aside>
+ 
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
@@ -147,6 +160,7 @@
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/jquery.fittext.js"></script>
     <script src="js/wow.min.js"></script>
+    
 
     <!-- Custom Theme JavaScript -->
     <script src="js/creative.js"></script>

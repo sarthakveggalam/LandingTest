@@ -3,7 +3,8 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
-
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,600,800);
+@import url(https://fonts.googleapis.com/css?family=Lato);
 html,
 body {
     width: 100%;
@@ -11,7 +12,7 @@ body {
 }
 
 body {
-    font-family: Merriweather,'Helvetica Neue',Arial,sans-serif;
+    font-family: Lato,'Helvetica Neue',Arial,sans-serif;
 }
 
 hr {
@@ -42,7 +43,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-family: 'Raleway','Helvetica Neue',Arial,sans-serif;
 }
 
 p {
@@ -52,7 +53,7 @@ p {
 }
 
 .bg-primary {
-    background-color: #85E8B5;
+    background-color: #d32f2f;
 }
 
 .bg-dark {
@@ -61,25 +62,41 @@ p {
 }
 
 .text-faded {
-    color: #043838;
+    color: #fff;
 }
 
 section {
-    padding: 230px 0;
+    padding: 200px 0;
 }
 
 aside {
-    padding: 230px 0;
+    padding: 70px 0;
 }
+
 
 .no-padding {
     padding: 0;
 }
+.icon-primary{
+    color: #fff;
+}
 
+.form-control{
+    height: 44px;
+    width:250px;
+    background-color: transparent;
+    border: 1px solid #043838;
+    padding: 12px 12px;
+    color: #000;
+    border-radius: 1px;
+}
+.form-inline .form-control{
+    width: 250px;
+}
 .navbar-default {
     border-color: rgba(34,34,34,.05);
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
-    background-color: #fff;
+    background-color: transparent;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -122,7 +139,7 @@ aside {
 }
 
 .bg-primary{
-    color: #043838;
+    color: #fff;
 }
 @media(min-width:768px) {
     .navbar-default {
@@ -136,7 +153,7 @@ aside {
 
     .navbar-default .navbar-header .navbar-brand:hover,
     .navbar-default .navbar-header .navbar-brand:focus {
-        color: #fff;
+        color: #F78B25;
     }
 
     .navbar-default .nav > li>a,
@@ -146,7 +163,7 @@ aside {
 
     .navbar-default .nav > li>a:hover,
     .navbar-default .nav>li>a:focus:hover {
-        color: #fff;
+        color: #0C3638;
     }
 
     .navbar-default.affix {
@@ -178,10 +195,11 @@ aside {
 header {
     position: relative;
     width: 100%;
-    min-height: auto;
+    /* min-height: auto; */
     text-align: center;
     color: #F78B25;
-    background-color: #EDEBAB;
+    background: /* url("../img/HomePage.svg"), */ url("../img/WhiteAndRed.svg") repeat-y bottom center scroll;
+    background-color: #fff;
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -199,7 +217,7 @@ header .header-content {
 header .header-content .header-content-inner h1 {
     margin-top: 0;
     margin-bottom: 0;
-    text-transform: uppercase;
+    text-transform: none;
     font-weight: 700;
 }
 
@@ -211,7 +229,7 @@ header .header-content .header-content-inner p {
     margin-bottom: 50px;
     font-size: 16px;
     font-weight: 300;
-    color: #F78B25;
+    color: #ffff;
 }
 
 @media(min-width:768px) {
@@ -243,7 +261,8 @@ header .header-content .header-content-inner p {
 }
 
 .section-heading {
-    margin-top: 0;
+    margin-top: -20px;
+    font-size: 50px;
 }
 
 .service-box {
@@ -442,7 +461,7 @@ fieldset[disabled] .btn-primary.active {
 
 .btn {
     border: 0;
-    border-radius: 300px;
+    border-radius: 3px;
     text-transform: uppercase;
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
     font-weight: 700;
